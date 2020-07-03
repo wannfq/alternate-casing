@@ -1,6 +1,6 @@
 {
   "name": "alternate-casing",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Wan Afiq <wannfq@gmail.com>",
   "bin": {
     "alternate-casing": "./lib/index.js"
