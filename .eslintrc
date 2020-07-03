@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "indent": ["off"],
+    "quotes": ["warn", "double"],
+    "comma-dangle": ["warn", "always-multiline"],
+    "semi": ["warn", "always"],
+    "arrow-parens": ["warn", "always"],
+    "max-len": ["error", { "code": 100 }],
+    "object-curly-spacing": ["error", "always"],
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": { "multiline": true },
+        "ObjectPattern": { "multiline": true },
+        "ImportDeclaration": { "multiline": true },
+        "ExportDeclaration": { "multiline": true }
+      }
+    ]
+  }
+}

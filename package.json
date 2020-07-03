@@ -1,0 +1,49 @@
+{
+  "name": "alternate-casing",
+  "version": "0.0.0",
+  "author": "Wan Afiq <wannfq@gmail.com>",
+  "bin": {
+    "alternate-casing": "./lib/index.js"
+  },
+  "dependencies": {
+    "clear": "^0.1.0",
+    "commander": "^5.1.0",
+    "csv-writer": "^1.6.0",
+    "inquirer": "^7.3.0",
+    "path": "^0.12.7",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4",
+    "@types/clear": "^0.1.0",
+    "@types/figlet": "^1.2.0",
+    "@types/inquirer": "^6.5.0",
+    "@types/mocha": "^5",
+    "@types/node": "^10",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4",
+    "chai-files": "^1.4.0",
+    "eslint": "^5.13",
+    "mocha": "^5",
+    "nyc": "^14",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "homepage": "https://github.com/wannfq/alternate-casing",
+  "keywords": [
+    "alternate-casing"
+  ],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "repository": "wannfq/alternate-casing",
+  "scripts": {
+    "build": "rm -rf lib && tsc -b",
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node ./src'"
+  },
+  "types": "./lib/index.d.ts"
+}
