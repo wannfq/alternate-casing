@@ -33,6 +33,8 @@ program
 
       await csvWriterService.write("output.csv", answers.input.split(""));
       console.log("CSV Created!");
+
+      process.exit(0);
     } catch (error) {
       console.error(error.message);
     }
